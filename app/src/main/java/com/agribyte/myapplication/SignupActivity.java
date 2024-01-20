@@ -6,6 +6,7 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.RadioButton;
+import android.widget.TextView;
 import android.widget.Toast;
 
 import androidx.annotation.NonNull;
@@ -24,6 +25,7 @@ public class SignupActivity extends AppCompatActivity {
     FirebaseAuth mAuth = FirebaseAuth.getInstance ();
     EditText edtusername, edtupassword, edtfullname, edtother, edtphonenumber;
     Button btnsignup;
+    TextView lpage;
     RadioButton yes, no, male, female;
 
     @Override
@@ -39,6 +41,8 @@ public class SignupActivity extends AppCompatActivity {
         edtphonenumber = findViewById ( R.id.edtphoneno );
         male = findViewById ( R.id.radiomale );
         female = findViewById ( R.id.radiofemale );
+        lpage = findViewById(R.id.loginpage);
+
 
 
         btnsignup.setOnClickListener ( new View.OnClickListener () {
@@ -49,6 +53,14 @@ public class SignupActivity extends AppCompatActivity {
                 Signup ( username, password );
             }
         } );
+
+        lpage.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent i = new Intent(SignupActivity.this, LoginActivity.class);
+                startActivity(i);
+            }
+        });
     }
 
     public void Signup(String username, String password) {

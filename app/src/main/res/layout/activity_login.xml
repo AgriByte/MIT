@@ -35,7 +35,7 @@
             android:fontFamily="sans-serif-black"
             android:gravity="center"
             android:padding="10dp"
-            android:text="Past Pluse"
+            android:text="AgriByte"
             android:textColor="@color/app_blue"
             android:textSize="32sp" />
 

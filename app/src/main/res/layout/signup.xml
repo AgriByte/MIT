@@ -204,7 +204,7 @@
                 android:id="@+id/signUpBtn"
                 android:layout_width="match_parent"
                 android:layout_height="40dp"
-                android:layout_above="@+id/textView23"
+                android:layout_above="@+id/loginpage"
                 android:layout_marginStart="35dp"
                 android:layout_marginTop="25dp"
                 android:layout_marginEnd="35dp"
@@ -216,7 +216,7 @@
                 android:textStyle="normal" />
 
             <TextView
-                android:id="@+id/textView23"
+                android:id="@+id/loginpage"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_alignParentBottom="true"
